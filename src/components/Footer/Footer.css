@@ -134,7 +134,7 @@
 
 .footer-contact-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
   margin-bottom: 15px;
   font-size: 13px;

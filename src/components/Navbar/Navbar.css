@@ -57,6 +57,8 @@
   /* Ensures it is always visible against any background */
   /* font-family: 'Inter', sans-serif; */
   font-family: Helvetica, sans-serif;
+  /* font-family: 'Playfair Display', serif; */
+
   font-size: 34px;
   font-weight: 700;
   letter-spacing: -1px;
