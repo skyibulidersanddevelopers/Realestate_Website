@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow admin or private paths (none currently, but good practice)
+Disallow: /api/
+Disallow: /.env
+
+# Sitemap location
+Sitemap: https://www.skyibuildersanddevelopers.com/sitemap.xml
