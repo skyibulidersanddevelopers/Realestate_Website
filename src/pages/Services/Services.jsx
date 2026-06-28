@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import SEO from '../../components/SEO/SEO';
 import './Services.css';
-import ServicesHeroImage from '../../assets/impressive_services_bg.png'; 
-import Logo from '../../assets/logo2.png';
-import WwdBgImage from '../../assets/hero_desktop_building_v6.png';
-import WwdResImage from '../../assets/hero_desktop_building_v6.png';
-import WwdCommImage from '../../assets/hero_desktop_building_v4.png';
-import WwdPlanImage from '../../assets/hero_desktop_building_v5.png';
-import WwdVastuImage from '../../assets/hero_desktop_building_v3.png';
-import WwdLayoutImage from '../../assets/hero_desktop_building_v2.png';
-import WwdInteriorImage from '../../assets/luxury_interior_renovation.png';
+import ServicesHeroImage from '../../assets/skyi-builders-construction-services-hosur-bangalore.webp'; 
+import Logo from '../../assets/skyi-builders-developers-logo.webp';
+import WwdBgImage from '../../assets/skyi-builders-luxury-apartment-project-bangalore.webp';
+import WwdResImage from '../../assets/skyi-builders-luxury-apartment-project-bangalore.webp';
+import WwdCommImage from '../../assets/skyi-builders-commercial-project-bangalore.webp';
+import WwdPlanImage from '../../assets/skyi-builders-residential-layout-hosur.webp';
+import WwdVastuImage from '../../assets/skyi-builders-luxury-villa-project-hosur.webp';
+import WwdLayoutImage from '../../assets/skyi-builders-premium-residential-project-bangalore.webp';
+import WwdInteriorImage from '../../assets/skyi-builders-luxury-interior-renovation-hosur.webp';
 import TestimonialSlider from '../../components/TestimonialSlider/TestimonialSlider';
 
 const SERVICES_SCHEMA = {

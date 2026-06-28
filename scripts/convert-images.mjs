@@ -80,14 +80,33 @@ const SEO_NAMES = {
 };
 
 // ── Conversion function ──────────────────────────────────────────────────────
-async function convertImage(inputPath, outputPath, filename) {
+async function convertImage(inputPath, outputPath, filename, shouldGenerateThumbnail = false) {
   try {
-    const stats = await sharp(inputPath).metadata();
-    const inputExt = path.extname(inputPath).toLowerCase();
+    let imagePipeline = sharp(inputPath);
+    const metadata = await imagePipeline.metadata();
 
-    await sharp(inputPath)
+    // Resize full size image to max 1600px width if it's larger
+    if (metadata.width && metadata.width > 1600) {
+      imagePipeline = imagePipeline.resize(1600, null, { withoutEnlargement: true });
+    }
+
+    await imagePipeline
       .webp({ quality: WEBP_QUALITY, effort: 4 })
       .toFile(outputPath);
+
+    // Generate a smaller thumbnail (max 600px width) if requested
+    if (shouldGenerateThumbnail) {
+      const ext = path.extname(outputPath);
+      const dir = path.dirname(outputPath);
+      const base = path.basename(outputPath, ext);
+      const thumbPath = path.join(dir, `${base}-thumbnail.webp`);
+
+      await sharp(inputPath)
+        .resize(600, null, { withoutEnlargement: true })
+        .webp({ quality: 80, effort: 4 })
+        .toFile(thumbPath);
+      console.log(`  📸 Created thumbnail: ${base}-thumbnail.webp`);
+    }
 
     const { size: inputSize } = await import('fs').then(m => {
       return new Promise((resolve) => {
@@ -125,13 +144,11 @@ async function processDirectory(dirPath, projectName) {
     const inputPath = path.join(dirPath, file);
     const outputPath = path.join(dirPath, `${seoName}.webp`);
 
-    // Skip if already converted
-    if (existsSync(outputPath)) {
-      console.log(`  ⏭  Already exists: ${seoName}.webp`);
-      continue;
-    }
+    // Determine if this is the primary project image to generate a thumbnail
+    const isPrimaryImage = seoName.endsWith('-1');
 
-    await convertImage(inputPath, outputPath, file);
+    // We overwrite existing to ensure everything is resized to 1600px width limit
+    await convertImage(inputPath, outputPath, file, isPrimaryImage);
   }
 }
 
@@ -139,7 +156,7 @@ async function processDirectory(dirPath, projectName) {
 async function main() {
   console.log('🚀 SKYi Builders — Image → WebP Conversion');
   console.log('═'.repeat(60));
-  console.log(`Quality: ${WEBP_QUALITY} | Target: <200KB per image\n`);
+  console.log(`Quality: ${WEBP_QUALITY} | Target: <200KB per image (Thumbnails: <50KB)\n`);
 
   // Process project subdirectories
   const projectDirs = ['project1','project2','project3','project4','project5','project6','project7'];
@@ -165,7 +182,6 @@ async function main() {
 
   console.log(`\n📁 Root assets (${rootAssets.length} images)`);
   for (const file of rootAssets) {
-    const stem = path.basename(file, path.extname(file)).replace('.PNG','').replace('.png','').replace('.jpg','');
     const cleanStem = path.basename(file, path.extname(file));
     const seoName = SEO_NAMES[cleanStem] || cleanStem.toLowerCase().replace(/[^a-z0-9]/g, '-');
     const inputPath = path.join(ASSETS_DIR, file);
@@ -175,11 +191,9 @@ async function main() {
       console.log(`  ⚠️  Not found: ${file}`);
       continue;
     }
-    if (existsSync(outputPath)) {
-      console.log(`  ⏭  Already exists: ${seoName}.webp`);
-      continue;
-    }
-    await convertImage(inputPath, outputPath, file);
+
+    // Overwrite to apply resizing
+    await convertImage(inputPath, outputPath, file, false);
   }
 
   console.log('\n' + '═'.repeat(60));

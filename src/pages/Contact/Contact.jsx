@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import SEO from '../../components/SEO/SEO';
 import './Contact.css';
-import ContactHeroImage from '../../assets/hero_desktop_building_v4.png';
-import hosurMapImg from '../../assets/hosur_map.png';
+import ContactHeroImage from '../../assets/skyi-builders-commercial-project-bangalore.webp';
+import hosurMapImg from '../../assets/skyi-builders-office-location-map-hosur-tamil-nadu.webp';
 
 const CONTACT_SCHEMA = {
   "@context": "https://schema.org",

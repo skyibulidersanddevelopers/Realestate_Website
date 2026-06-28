@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import SEO from '../../components/SEO/SEO';
 import './About.css';
-import Logo from '../../assets/logo2.png';
-import AboutImage from '../../assets/aboutImage2.png';
-import founderImage from '../../assets/founderImage.png';
+import Logo from '../../assets/skyi-builders-developers-logo.webp';
+import AboutImage from '../../assets/skyi-builders-developers-hosur-premium-real-estate.webp';
+import founderImage from '../../assets/sampath-kumar-managing-director-skyi-builders-hosur.webp';
 import qrCode from '../../assets/qrCode.jpeg';
 
 const ABOUT_SCHEMA = {
