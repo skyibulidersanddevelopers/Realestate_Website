@@ -243,7 +243,7 @@ const ProjectDetail = () => {
       <section className="pd-gallery-section" ref={galleryRef}>
         <div className="pd-gallery-header">
           <div className="pd-section-tag">Project Gallery</div>
-          <h2 className="pd-gallery-title">Explore Every Detail</h2>
+          <h2 className="pd-gallery-title">Explored site views</h2>
           <p className="pd-gallery-subtitle">Click any image to view in full screen</p>
         </div>
 

@@ -81,6 +81,7 @@
   .projects-section {
     padding: 60px 5%;
   }
+
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -90,6 +91,11 @@
   .projects-section {
     padding: 50px 20px;
   }
+
+  .pd-back-btn {
+    left: 16px;
+    top: 100px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -97,6 +103,7 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
   .projects-title {
     font-size: 28px;
   }
