@@ -45,7 +45,7 @@ const Home = () => {
         <div className="map-content">
           <h2 className="map-heading">Building Trust, Creating Landmarks</h2>
           <p className="map-description">
-            Experience unparalleled luxury and serenity. SKYi Builders & Developers bring you the finest real estate solutions designed to elevate your lifestyle and provide a truly premium living experience in Hosur.
+            Every SKYi project reflects thoughtful design. We bring you the finest real estate solutions designed to elevate your lifestyle and provide a truly premium living experience.
           </p>
 
           <div className="map-details">

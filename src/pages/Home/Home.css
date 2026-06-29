@@ -11,11 +11,11 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  background-image: url('../../assets/skyi-builders-luxury-apartment-project-bangalore.webp');
-  /* background-image: linear-gradient(rgb(80 80 80 / 75%), rgba(26, 26, 26, 0.9)), url('../../assets/skyi-builders-luxury-apartment-project-bangalore.webp');; */
+  background-image: url('../../assets/laptopView2.webp');
+  /* background-image: linear-gradient(rgb(80 80 80 / 75%), rgba(26, 26, 26, 0.9)), url('../../assets/laptopView2.webp');; */
 
   /* background-image: linear-gradient(rgba(24, 24, 27, 0.65),
-      rgb(27 27 30 / 88%)), url('../../assets/skyi-builders-luxury-apartment-project-bangalore.webp'); */
+      rgb(27 27 30 / 88%)), url('../../assets/laptopView2.webp'); */
 
 }
 
@@ -250,6 +250,7 @@
   .map-section {
     padding: 60px 5%;
     gap: 40px;
+    margin-top: 10px;
   }
 
   .map-heading {
@@ -257,10 +258,18 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1012px) {
+  .hero-section {
+    background-image: url('../../assets/laptopView.webp');
+    /* background-position: bottom 10%; */
+
+  }
+}
+
+@media (max-width: 769px) {
   .hero-section {
     height: 65vh;
-    background-image: url('../../assets/skyi-builders-premium-real-estate-mobile-banner.webp');
+    background-image: url('../../assets/mobileView.webp');
     /* Mobile specific image */
   }
 
@@ -306,6 +315,8 @@
     flex-direction: column;
     padding: 50px 20px;
     gap: 40px;
+    margin-top: 9px;
+
   }
 
   .map-content {
@@ -374,5 +385,47 @@
   .map-button {
     width: 100%;
     justify-content: center;
+  }
+}
+
+@media (max-width: 591px) {
+  .hero-section {
+    /* height: 65vh; */
+  }
+}
+
+@media (min-width: 1320px) {
+  .hero-section {
+    background-position: center 30%;
+    filter: brightness(90%);
+  }
+}
+
+
+@media (max-width: 494px) {
+
+  .logo-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 356px) {
+
+  .logo-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 349px) {
+
+  .logo-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 342px) {
+
+  .logo-text {
+    font-size: 11px;
   }
 }
