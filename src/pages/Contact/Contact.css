@@ -469,3 +469,48 @@
     height: 300px;
   }
 }
+
+@media (max-width: 416px) {
+  .contact-glass-content-wrapper {
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+    box-shadow: none;
+    animation: none;
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 343px) {
+
+  .logo-text {
+    font-size: 15px;
+
+  }
+
+}
+
+@media (max-width: 323px) {
+
+  .hero-title {
+    font-size: clamp(47px, 6vw, 72px);
+  }
+
+}
+
+@media (max-width: 317px) {
+
+  .hero-title {
+    font-size: clamp(46px, 6vw, 72px);
+  }
+
+}
+
+@media (max-width: 312px) {
+
+  .hero-title {
+    font-size: clamp(44px, 6vw, 72px);
+  }
+
+}

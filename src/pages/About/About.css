@@ -212,7 +212,8 @@
 }
 
 .core-values {
-  background: #1a1a1a;
+  /* background: #1a1a1a; */
+  background: #1e1e1e;
   color: white;
   padding: 60px;
   border-radius: 20px;
@@ -342,7 +343,7 @@
   font-size: 26px;
   font-style: italic;
   color: #D4AF37;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
   line-height: 1.4;
 }
 
@@ -435,20 +436,21 @@
 /* SECTION 4: STATISTICS */
 .about-stats-section {
   padding: 64px 0;
-  background-color: #1a1a1a;
-  background-image: radial-gradient(circle at center, #2a2a2a 0%, #1a1a1a 100%);
-  color: white;
+  background-color: #f7f5ef;
+  /* background-color: #f9eed7; */
+  background-image: radial-gradient(circle at center, #f9eed7 0%, #ece8dd 100%);
+  color: #1a1a1a;
   text-align: center;
 }
 
 .about-stats-section .section-title {
-  color: white;
+  color: #1a1a1a;
   margin-bottom: 15px;
 }
 
 .stats-subtitle {
   font-size: 20px;
-  color: #D4AF37;
+  color: #c28b21;
   margin-bottom: 60px;
   line-height: 1.6;
   font-weight: 500;
@@ -463,14 +465,14 @@
 }
 
 .stat-card {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: #ffffff;
+  border: 1px solid rgba(212, 175, 55, 0.15);
   padding: 60px 30px;
   border-radius: 20px;
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 .stat-card::before {
@@ -488,9 +490,9 @@
 
 .stat-card:hover {
   transform: translateY(-10px);
-  background: rgba(255, 255, 255, 0.06);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  border-color: rgba(212, 175, 55, 0.3);
+  background: #ffffff;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+  border-color: rgba(212, 175, 55, 0.6);
 }
 
 .stat-card:hover::before {
@@ -499,27 +501,42 @@
 
 .stat-number {
   font-family: 'Playfair Display', serif;
-  font-size: 36px;
-  color: #F2C94C;
+  font-size: 38px;
+  /* color: #c28b21; */
+  color: #1f471f;
   font-weight: 700;
   margin-bottom: 15px;
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: none;
 }
 
 .stat-label {
-  font-size: 19px;
-  color: #ddd;
+  font-size: 18px;
+  color: #4a4a4a;
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 500;
+}
+
+.stat-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 57px;
+  margin-bottom: 15px;
+}
+
+.credai-logo-img {
+  max-height: 102px;
+  width: auto;
+  object-fit: contain;
 }
 
 .stats-footer {
   max-width: 800px;
   margin: 0 auto;
   font-size: 22px;
-  color: #bbb;
+  color: #4a4a4a;
   line-height: 1.8;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
   padding-top: 50px;
   font-family: 'Playfair Display', serif;
 }

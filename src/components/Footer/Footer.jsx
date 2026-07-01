@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo3 from '../../assets/logo3.jpg';
+import Logo2 from '../../assets/logo2.png';
 import './Footer.css';
 
 const Footer = () => {
@@ -28,17 +30,10 @@ const Footer = () => {
         {/* Column 1: Brand Info */}
         <div className="footer-col brand-col">
           <div className="footer-logo">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="logo-icon">
-              <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
-              <line x1="9" y1="22" x2="9" y2="22.01"></line>
-              <line x1="15" y1="22" x2="15" y2="22.01"></line>
-              <path d="M12 6v6"></path>
-              <path d="M9 12h6"></path>
-              <circle cx="12" cy="6" r="2"></circle>
-            </svg>
+            <img src={Logo2} alt="SKYi Builders" className="logo-icon" />
             <div className="logo-text">
               <span className="logo-title">SKYi Builders</span>
-              <span className="logo-subtitle">& DEVELOPERS</span>
+              <span className="logo-subtitle">& Developers</span>
             </div>
           </div>
           <p className="footer-desc">

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 // import Logo from '../../assets/logo2.png';
 import Logo3 from '../../assets/logo3.jpg';
+import Logo4 from '../../assets/logo4.png';
 // import companyLogo from '../../assets/companyLogo.jpg';
 import './Navbar.css';
 
@@ -46,7 +47,7 @@ const Navbar = () => {
         <div className="navbar-content">
           <NavLink to="/" className="logo-container" onClick={closeMenu}>
             <div className="logo-icon">
-              <img src={Logo3} alt="SKYi Builders & Developers — Real Estate Company Hosur" className="logo-img" />
+              <img src={Logo4} alt="SKYi Builders & Developers — Real Estate Company Hosur" className="logo-img" />
             </div>
             <span className="logo-text">SKYi Builders & Developers</span>
           </NavLink>

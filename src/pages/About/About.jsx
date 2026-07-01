@@ -5,6 +5,7 @@ import Logo from '../../assets/skyi-builders-developers-logo.webp';
 import AboutImage from '../../assets/skyi-builders-developers-hosur-premium-real-estate.webp';
 import founderImage from '../../assets/sampath-kumar-managing-director-skyi-builders-hosur.webp';
 import qrCode from '../../assets/qrCode.jpeg';
+import credaiLogo from '../../assets/credaiLogo.jpeg';
 
 const ABOUT_SCHEMA = {
   "@context": "https://schema.org",
@@ -192,7 +193,9 @@ const About = () => {
               <div className="stat-label">Space delivered, trust earned</div>
             </div>
             <div className="stat-card">
-              <div className="stat-number">Credai Member</div>
+              <div className="stat-number stat-logo-container">
+                <img src={credaiLogo} alt="CREDAI Member" className="credai-logo-img" />
+              </div>
               <div className="stat-label">Part of India's leading real estate body</div>
             </div>
           </div>

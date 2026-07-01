@@ -3,13 +3,14 @@ import SEO from '../../components/SEO/SEO';
 import './Services.css';
 import ServicesHeroImage from '../../assets/skyi-builders-construction-services-hosur-bangalore.webp'; 
 import Logo from '../../assets/skyi-builders-developers-logo.webp';
-import WwdBgImage from '../../assets/skyi-builders-luxury-apartment-project-bangalore.webp';
-import WwdResImage from '../../assets/skyi-builders-luxury-apartment-project-bangalore.webp';
-import WwdCommImage from '../../assets/skyi-builders-commercial-project-bangalore.webp';
-import WwdPlanImage from '../../assets/skyi-builders-residential-layout-hosur.webp';
-import WwdVastuImage from '../../assets/skyi-builders-luxury-villa-project-hosur.webp';
-import WwdLayoutImage from '../../assets/skyi-builders-premium-residential-project-bangalore.webp';
-import WwdInteriorImage from '../../assets/skyi-builders-luxury-interior-renovation-hosur.webp';
+import WwdBgImage from '../../assets/project7/skyi-pinnacle-estates-ultra-luxury-villa-devanahalli-bangalore-2.webp';
+import WwdResImage from '../../assets/project1/skyi-meridian-heights-luxury-villa-sarjapur-bangalore-1.webp';
+import WwdCommImage from '../../assets/project4/skyi-nexus-towers-luxury-apartments-electronic-city-bangalore-1.webp';
+import WwdPlanImage from '../../assets/project1/skyi-meridian-heights-villa-layout-plan-bangalore.webp';
+import WwdVastuImage from '../../assets/project7/skyi-pinnacle-estates-ultra-luxury-villa-devanahalli-bangalore-1.webp';
+import WwdLayoutImage from '../../assets/project2/skyi-enclave-prime-residential-layout-whitefield.webp';
+import WwdInteriorImage from '../../assets/project5/skyi-woodland-vistas-eco-friendly-villa-garden-bangalore.webp';
+import renovationImage from '../../assets/project6/skyi-harmony-residences-row-house-yelahanka-bangalore-2.webp';
 import TestimonialSlider from '../../components/TestimonialSlider/TestimonialSlider';
 
 const SERVICES_SCHEMA = {
@@ -73,7 +74,7 @@ const Services = () => {
             <div className="hero-tags">
               <span className="hero-tag">PLANNING</span>
               <span className="hero-tag">CONSTRUCTION</span>
-              <span className="hero-tag">INTERIORS</span>
+              {/* <span className="hero-tag">INTERIORS</span> */}
             </div>
           </div>
           
@@ -206,11 +207,11 @@ const Services = () => {
                   </svg>
                 </div>
                 <div className="wwd-text-row">
-                  <h3>Interiors & Renovation</h3>
-                  <p>Elegant interiors and seamless renovations to elevate every space.</p>
+                  <h3>Renovation</h3>
+                  <p>Elegant designs and seamless renovations to elevate every space.</p>
                 </div>
               </div>
-              <div className="wwd-card-image" style={{ backgroundImage: `url(${WwdInteriorImage})` }}>
+              <div className="wwd-card-image" style={{ backgroundImage: `url(${renovationImage})`, backgroundPosition: 'center 35%' }}>
                 <div className="wwd-card-arrow">
                 </div>
               </div>
