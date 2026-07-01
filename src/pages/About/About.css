@@ -591,6 +591,7 @@
 
 @media (max-width: 992px) {
   .about-hero-section {
+    background-attachment: scroll;
     padding: clamp(90px, 71.5px + 5vw, 120px) clamp(15px, 5.75px + 2.5vw, 30px) clamp(30px, 11.5px + 5vw, 60px);
     min-height: auto;
   }
@@ -730,6 +731,7 @@
 @media (max-width: 993px) {
 
   .about-hero-section {
+    background-attachment: scroll;
     padding: clamp(2rem, 5vw, 4rem) 1rem;
   }
 
