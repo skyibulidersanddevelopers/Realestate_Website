@@ -35,7 +35,7 @@ const Home = () => {
         {/* Hero Text */}
         <div className="hero-text-container">
           <div className="script-text">Discover</div>
-          <div className="serif-text line-1">Thoughtful</div>
+          <div className="serif-text line-1">Excellence</div>
           <div className="serif-text line-2">LIVING</div>
         </div>
 
