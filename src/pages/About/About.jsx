@@ -5,7 +5,7 @@ import Logo from '../../assets/skyi-builders-developers-logo.webp';
 import AboutImage from '../../assets/skyi-builders-developers-hosur-premium-real-estate.webp';
 import founderImage from '../../assets/sampath-kumar-managing-director-skyi-builders-hosur.webp';
 import qrCode from '../../assets/qrCode.jpeg';
-import credaiLogo from '../../assets/credaiLogo.jpeg';
+import credaiLogo from '../../assets/credaiLogo.png';
 
 const ABOUT_SCHEMA = {
   "@context": "https://schema.org",
@@ -153,7 +153,7 @@ const About = () => {
 
               <div className="director-info">
                 <h3>Mr.SAMPATH KUMAR S</h3>
-                <p className="designation">Managing Director</p>
+                <p className="designation">Founder</p>
                 <p>He drives SKYi with the belief that construction is not just about buildings, but about trust, detail, and destiny.</p>
               </div>
 
@@ -188,12 +188,12 @@ const About = () => {
               <div className="stat-number">150+ Projects</div>
               <div className="stat-label">Completed Across Hosur & surroundings</div>
             </div>
-            <div className="stat-card">
+            <div className="stat-card active">
               <div className="stat-number">2,50,000+ Sq.ft</div>
               <div className="stat-label">Space delivered, trust earned</div>
             </div>
             <div className="stat-card">
-              <div className="stat-number stat-logo-container">
+              <div className="stat-logo-wrapper">
                 <img src={credaiLogo} alt="CREDAI Member" className="credai-logo-img" />
               </div>
               <div className="stat-label">Part of India's leading real estate body</div>

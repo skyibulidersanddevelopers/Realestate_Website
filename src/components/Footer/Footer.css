@@ -1,8 +1,8 @@
 .footer-section {
-  background-color: #1a364b;
-  /* Dark blue matching reference */
-  color: #a4b4c4;
-  /* Light grayish blue text */
+  background-color: #141414;
+  /* Dark charcoal matching the brand theme */
+  color: #b0b0b0;
+  /* Soft warm gray text */
   padding: 80px 10% 40px;
   font-family: 'Inter', sans-serif;
   width: 100%;
@@ -28,8 +28,8 @@
 }
 
 .footer-top-left h2 span {
-  color: #7b99b5;
-  /* Lighter shade for emphasis */
+  color: #F2C94C;
+  /* brand gold */
 }
 
 .footer-top-right {
@@ -43,7 +43,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid #3c546a;
+  border-bottom: 1px solid #333333;
 }
 
 .email-subscription input {
@@ -57,7 +57,7 @@
 }
 
 .email-subscription input::placeholder {
-  color: #6a8298;
+  color: #666666;
 }
 
 .email-subscription input:focus {
@@ -65,9 +65,9 @@
 }
 
 .email-subscription button {
-  background-color: #4a6379;
+  background-color: #F2C94C;
   border: none;
-  color: white;
+  color: #141414;
   padding: 8px 12px;
   border-radius: 4px;
   cursor: pointer;
@@ -78,14 +78,14 @@
 }
 
 .email-subscription button:hover {
-  background-color: #5d7a94;
+  background-color: #d4af37;
 }
 
 /* DIVIDER */
 .footer-divider {
   border: 0;
   height: 1px;
-  background-color: #2b455b;
+  background-color: #222222;
   margin-bottom: 50px;
 }
 
@@ -100,7 +100,7 @@
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 7px;
+  /* gap: 7px; */
   margin-bottom: 20px;
   color: white;
 }
@@ -148,7 +148,7 @@
   gap: 12px;
   margin-bottom: 15px;
   font-size: 13px;
-  color: #a4b4c4;
+  color: #b0b0b0;
 }
 
 .footer-contact-item svg {
@@ -156,6 +156,7 @@
   height: 18px;
   flex-shrink: 0;
   margin-top: 2px;
+  color: #F2C94C;
 }
 
 /* Cols 2 & 3: Links */
@@ -177,7 +178,7 @@
 }
 
 .links-col ul li a {
-  color: #a4b4c4;
+  color: #b0b0b0;
   text-decoration: none;
   font-size: 14px;
   display: flex;
@@ -189,7 +190,7 @@
   content: '›';
   margin-right: 8px;
   font-size: 16px;
-  color: #7b99b5;
+  color: #F2C94C;
 }
 
 .links-col ul li a:hover {
@@ -209,15 +210,15 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  background-color: #2b455b;
-  color: #a4b4c4;
+  background-color: #222222;
+  color: #b0b0b0;
   border-radius: 4px;
   transition: all 0.3s;
 }
 
 .social-icons a:hover {
-  background-color: #4a6379;
-  color: white;
+  background-color: #F2C94C;
+  color: #141414;
 }
 
 .social-icons svg {
@@ -234,7 +235,7 @@
 
 .copyright-text {
   font-size: 12px;
-  color: #6a8298;
+  color: #666666;
 }
 
 /* RESPONSIVE */

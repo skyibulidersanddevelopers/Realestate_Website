@@ -4,13 +4,18 @@ import './Services.css';
 import ServicesHeroImage from '../../assets/skyi-builders-construction-services-hosur-bangalore.webp'; 
 import Logo from '../../assets/skyi-builders-developers-logo.webp';
 import WwdBgImage from '../../assets/project7/skyi-pinnacle-estates-ultra-luxury-villa-devanahalli-bangalore-2.webp';
-import WwdResImage from '../../assets/project1/skyi-meridian-heights-luxury-villa-sarjapur-bangalore-1.webp';
-import WwdCommImage from '../../assets/project4/skyi-nexus-towers-luxury-apartments-electronic-city-bangalore-1.webp';
-import WwdPlanImage from '../../assets/project1/skyi-meridian-heights-villa-layout-plan-bangalore.webp';
-import WwdVastuImage from '../../assets/project7/skyi-pinnacle-estates-ultra-luxury-villa-devanahalli-bangalore-1.webp';
-import WwdLayoutImage from '../../assets/project2/skyi-enclave-prime-residential-layout-whitefield.webp';
+import WwdResImage1 from '../../assets/project2_2/skyi-enclave-prime-villa-plots-whitefield-bangalore-1.webp';
+// import WwdcommResImage from '../../assets/project1/skyi-meridian-heights-luxury-villa-sarjapur-bangalore-1.webp';
+import WwdcommResImage from '../../assets/project4_4/skyi-nexus-towers-luxury-apartments-electronic-city-bangalore-1.webp';
+
+// import WwdCommImage from '../../assets/project4/skyi-nexus-towers-luxury-apartments-electronic-city-bangalore-1.webp';
+// import WwdPlanImage from '../../assets/project1/skyi-meridian-heights-villa-layout-plan-bangalore.webp';
+import WwdPlanImage from '../../assets/project5_5/skyi-woodland-vistas-3bhk-eco-villa-kanakapura-bangalore.webp';
+
+import vastu_image from '../../assets/vastu_image.png';
+import layout_image from '../../assets/layout-image.webp';
 import WwdInteriorImage from '../../assets/project5/skyi-woodland-vistas-eco-friendly-villa-garden-bangalore.webp';
-import renovationImage from '../../assets/project6/skyi-harmony-residences-row-house-yelahanka-bangalore-2.webp';
+import renovation_image from '../../assets/renovation-image.webp';
 import TestimonialSlider from '../../components/TestimonialSlider/TestimonialSlider';
 
 const SERVICES_SCHEMA = {
@@ -115,9 +120,9 @@ const Services = () => {
                 <h3>Residential<br />Construction</h3>
                 <p>Building dream homes with quality, transparency & timely delivery.</p>
               </div>
-              <div className="wwd-card-image" style={{ backgroundImage: `url(${WwdResImage})` }}>
-                <div className="wwd-card-arrow">
-                </div>
+              <div className="wwd-card-image" style={{ backgroundImage: `url(${WwdResImage1})` }}>
+                {/* <div className="wwd-card-arrow">
+                </div> */}
               </div>
             </div>
             
@@ -137,9 +142,9 @@ const Services = () => {
                 <h3>Commercial<br />Projects</h3>
                 <p>Creating functional and future-ready commercial spaces.</p>
               </div>
-              <div className="wwd-card-image" style={{ backgroundImage: `url(${WwdCommImage})` }}>
-                <div className="wwd-card-arrow">
-                </div>
+              <div className="wwd-card-image" style={{ backgroundImage: `url(${WwdcommResImage})` }}>
+                {/* <div className="wwd-card-arrow">
+                </div> */}
               </div>
             </div>
             
@@ -155,8 +160,8 @@ const Services = () => {
                 <p>Smart planning and innovative designs that bring ideas to life.</p>
               </div>
               <div className="wwd-card-image" style={{ backgroundImage: `url(${WwdPlanImage})` }}>
-                <div className="wwd-card-arrow">
-                </div>
+                {/* <div className="wwd-card-arrow">
+                </div> */}
               </div>
             </div>
             
@@ -172,9 +177,9 @@ const Services = () => {
                 <h3>Vastu<br />Consultation</h3>
                 <p>Vastu-compliant solutions for harmony, positivity and prosperity.</p>
               </div>
-              <div className="wwd-card-image" style={{ backgroundImage: `url(${WwdVastuImage})` }}>
-                <div className="wwd-card-arrow">
-                </div>
+              <div className="wwd-card-image" style={{ backgroundImage: `url(${vastu_image})` }}>
+                {/* <div className="wwd-card-arrow">
+                </div> */}
               </div>
             </div>
             
@@ -192,9 +197,9 @@ const Services = () => {
                   <p>Efficient space utilization with well-structured and practical layouts.</p>
                 </div>
               </div>
-              <div className="wwd-card-image" style={{ backgroundImage: `url(${WwdLayoutImage})` }}>
-                <div className="wwd-card-arrow">
-                </div>
+              <div className="wwd-card-image" style={{ backgroundImage: `url(${layout_image})` }}>
+                {/* <div className="wwd-card-arrow">
+                </div> */}
               </div>
             </div>
             
@@ -211,9 +216,9 @@ const Services = () => {
                   <p>Elegant designs and seamless renovations to elevate every space.</p>
                 </div>
               </div>
-              <div className="wwd-card-image" style={{ backgroundImage: `url(${renovationImage})`, backgroundPosition: 'center 35%' }}>
-                <div className="wwd-card-arrow">
-                </div>
+              <div className="wwd-card-image" style={{ backgroundImage: `url(${renovation_image})`, backgroundPosition: 'center 35%' }}>
+                {/* <div className="wwd-card-arrow">
+                </div> */}
               </div>
             </div>
           </div>

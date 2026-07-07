@@ -146,7 +146,9 @@ const ProjectDetail = () => {
             <span className="pd-eyebrow-dot" />
             Completed Project
           </div> */}
-          <h1 className="pd-hero-title">{project.title}</h1>
+
+
+          {/* <h1 className="pd-hero-title">{project.title}</h1> */}
           {/* <p className="pd-hero-subtitle">{project.shortDesc}</p> */}
 
           <div className="pd-hero-meta">

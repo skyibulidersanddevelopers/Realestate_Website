@@ -466,66 +466,73 @@
 
 .stat-card {
   background: #ffffff;
-  border: 1px solid rgba(212, 175, 55, 0.15);
-  padding: 60px 30px;
-  border-radius: 20px;
+  border-radius: 16px;
+  padding: 50px 30px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   transition: all 0.4s ease;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.stat-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: #D4AF37;
-  transform: scaleX(0);
-  transition: transform 0.5s ease cubic-bezier(0.19, 1, 0.22, 1);
-  transform-origin: left;
+.stat-card.active {
+  background: linear-gradient(145deg, #2a2016, #1f1610);
+  color: #fff;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  border-color: rgba(216, 156, 37, 0.3);
 }
 
 .stat-card:hover {
   transform: translateY(-10px);
-  background: #ffffff;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
-  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 20px 40px rgba(216, 156, 37, 0.15);
 }
 
-.stat-card:hover::before {
-  transform: scaleX(1);
+.stat-card.active:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 .stat-number {
   font-family: 'Playfair Display', serif;
-  font-size: 38px;
-  /* color: #c28b21; */
-  color: #1f471f;
+  font-size: 34px;
+  color: #1a120e;
   font-weight: 700;
   margin-bottom: 15px;
-  text-shadow: none;
+  transition: color 0.4s ease;
+}
+
+.stat-card.active .stat-number {
+  color: #d89c25;
 }
 
 .stat-label {
-  font-size: 18px;
-  color: #4a4a4a;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #555;
   line-height: 1.6;
   font-weight: 500;
+  transition: color 0.4s ease;
 }
 
-.stat-logo-container {
+.stat-card.active .stat-label {
+  color: #e0e0e0;
+}
+
+.stat-logo-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 57px;
+  height: 80px;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .credai-logo-img {
-  max-height: 102px;
+  max-height: 90px;
+  max-width: 90%;
   width: auto;
   object-fit: contain;
 }
@@ -724,7 +731,7 @@
   }
 
   .stat-number {
-    font-size: 42px;
+    font-size: 37px;
   }
 }
 

@@ -150,14 +150,18 @@
 .contact-info-card.active {
   background: linear-gradient(145deg, #2a2016, #1f1610);
   color: #fff;
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
   border-color: rgba(216, 156, 37, 0.3);
 }
 
 .contact-info-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(216, 156, 37, 0.15);
+}
+
+.contact-info-card.active:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 .icon-circle {

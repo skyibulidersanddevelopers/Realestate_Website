@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import SEO from '../../components/SEO/SEO';
 import './Contact.css';
 import ContactHeroImage from '../../assets/skyi-builders-commercial-project-bangalore.webp';
-import hosurMapImg from '../../assets/skyi-builders-office-location-map-hosur-tamil-nadu.webp';
+import hosurMapImg from '../../assets/mapImage.png';
+
 
 const CONTACT_SCHEMA = {
   "@context": "https://schema.org",
@@ -124,7 +125,8 @@ const Contact = () => {
                 </svg>
               </div>
               <h3>Visit Us</h3>
-              <p>Plot No.41, Rajendra Nagar<br />O.Karapalli, Hosur<br />635 109</p>
+              {/* <p>Plot No-41, Rajendra Nagar, O, Karapalli, Hosur, Tamil Nadu 635 109</p> */}
+              <p>Plot No-41, Rajendra Nagar, O, Karapalli, Hosur, Tamil Nadu 635109</p>
             </div>
 
             <div className="contact-info-card active">
@@ -146,7 +148,7 @@ const Contact = () => {
                 </svg>
               </div>
               <h3>Email Us</h3>
-              <p>skyibuildershosur<br />@gmail.com</p>
+              <p>skyibuildershosur@gmail.com</p>
             </div>
 
           </div>

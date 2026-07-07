@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+
+
 .navbar {
   position: fixed;
   top: 0;
@@ -57,19 +61,14 @@
   /* Perfectly matches the golden logo icon */
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   /* Ensures it is always visible against any background */
-  /* font-family: 'Inter', sans-serif; */
-  font-family: Helvetica, sans-serif;
-  /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'Cinzel', serif; */
+  font-family: 'Raleway', sans-serif;
   font-size: 34px;
   font-weight: 700;
-  letter-spacing: -1px;
+  letter-spacing: -0.7px;
   transition: color 0.3s ease;
   margin-left: 11px;
-  font-family: 'Cinzel', serif;
-  font-weight: 700;
-  letter-spacing: 3px;
   text-transform: none;
-
 }
 
 

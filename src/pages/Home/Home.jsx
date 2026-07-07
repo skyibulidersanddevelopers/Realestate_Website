@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectsSection from '../../components/Projects/ProjectsSection';
 import SEO from '../../components/SEO/SEO';
 import './Home.css';
-import hosurMapImg from '../../assets/skyi-builders-office-location-map-hosur-tamil-nadu.webp';
+import hosurMapImg from '../../assets/mapImage.png';
 
 const HOME_SCHEMA = {
   "@context": "https://schema.org",

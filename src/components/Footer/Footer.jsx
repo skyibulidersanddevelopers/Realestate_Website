@@ -32,8 +32,8 @@ const Footer = () => {
           <div className="footer-logo">
             <img src={Logo2} alt="SKYi Builders" className="logo-icon" />
             <div className="logo-text">
-              <span className="logo-title">SKYi Builders</span>
-              <span className="logo-subtitle">& Developers</span>
+              <span className="logo-title">SKYi Builders & Developers</span>
+              {/* <span className="logo-subtitle">Builders & Developers</span> */}
             </div>
           </div>
           <p className="footer-desc">
