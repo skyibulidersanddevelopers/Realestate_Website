@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import SEO from '../../components/SEO/SEO';
 import './Services.css';
-import ServicesHeroImage from '../../assets/skyi-builders-construction-services-hosur-bangalore.webp'; 
+import ServicesHeroImage from '../../assets/skyi-builders-construction-services-hosur-bangalore.webp';
 import Logo from '../../assets/skyi-builders-developers-logo.webp';
 import WwdBgImage from '../../assets/project7/skyi-pinnacle-estates-ultra-luxury-villa-devanahalli-bangalore-2.webp';
 import WwdResImage1 from '../../assets/project2_2/skyi-enclave-prime-villa-plots-whitefield-bangalore-1.webp';
@@ -57,32 +57,32 @@ const Services = () => {
       {/* NEW HERO SECTION INSPIRED BY REFERENCE */}
       <section className="services-hero-glass">
         <div className="hero-glass-bg">
-           <img src={ServicesHeroImage} alt="SKYi Builders & Developers premium construction services — residential, commercial and interior projects in Hosur" />
+          <img src={ServicesHeroImage} alt="SKYi Builders & Developers premium construction services — residential, commercial and interior projects in Hosur" />
         </div>
-        
+
         <div className="hero-glass-content-wrapper">
           <div className="hero-content-raw">
             <div className="hero-subtitle">
               <span className="hero-line"></span>
               PREMIUM REAL ESTATE
             </div>
-            
+
             <h1 className="hero-title">
               <span className="text-white">Our</span><br />
               <span className="text-gold">Services</span>
             </h1>
-            
+
             <p className="hero-description">
               From visionary architectural planning and meticulous construction to bespoke interior design — SKYi delivers unparalleled excellence. We don't just build properties; we craft homes that elevate your lifestyle.
             </p>
-            
+
             <div className="hero-tags">
               <span className="hero-tag">PLANNING</span>
               <span className="hero-tag">CONSTRUCTION</span>
               {/* <span className="hero-tag">INTERIORS</span> */}
             </div>
           </div>
-          
+
           <div className="hero-image-right">
             <img src={Logo} alt="SKYi Builders & Developers — Trusted Real Estate Company Logo" />
           </div>
@@ -93,7 +93,7 @@ const Services = () => {
       {/* WHAT WE DO SECTION (IMAGE DESIGN) */}
       <section className="what-we-do-section" style={{ backgroundImage: `url(${WwdBgImage})` }}>
         <div className="wwd-dark-overlay"></div>
-        
+
         <div className="container wwd-container">
           <div className="wwd-header-new">
             <svg viewBox="0 0 24 24" className="wwd-top-icon" width="40" height="40" stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -108,7 +108,12 @@ const Services = () => {
             </div>
             <p>Our strength lies in offering complete solutions under one roof.<br />From planning to interiors, every service is tailored to suit<br />the unique needs of each client.</p>
           </div>
-          
+
+
+
+
+
+
           <div className="wwd-grid-new">
             <div className="wwd-card-new">
               <div className="wwd-card-content">
@@ -125,7 +130,11 @@ const Services = () => {
                 </div> */}
               </div>
             </div>
-            
+
+
+
+
+
             <div className="wwd-card-new">
               <div className="wwd-card-content">
                 <div className="wwd-icon-new">
@@ -147,24 +156,33 @@ const Services = () => {
                 </div> */}
               </div>
             </div>
-            
+
+
+
+
+
+
             <div className="wwd-card-new">
               <div className="wwd-card-content">
                 <div className="wwd-icon-new">
                   <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="1.5" fill="none">
-                    <path d="m2 22 1-1h3l9-9"></path>
-                    <path d="M22 2h-5l-4.5 4.5 5 5L22 7Z"></path>
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
                   </svg>
                 </div>
-                <h3>Planning &<br />Designing</h3>
-                <p>Smart planning and innovative designs that bring ideas to life.</p>
+                <h3>Renovation</h3>
+                <p>Elegant designs and seamless renovations to elevate every space.</p>
               </div>
-              <div className="wwd-card-image" style={{ backgroundImage: `url(${WwdPlanImage})` }}>
+              <div className="wwd-card-image" style={{ backgroundImage: `url(${renovation_image})` }}>
                 {/* <div className="wwd-card-arrow">
                 </div> */}
               </div>
             </div>
-            
+
+
+
+
+
             <div className="wwd-card-new">
               <div className="wwd-card-content">
                 <div className="wwd-icon-new">
@@ -182,7 +200,10 @@ const Services = () => {
                 </div> */}
               </div>
             </div>
-            
+
+
+
+
             <div className="wwd-card-new wwd-card-wide">
               <div className="wwd-card-content-row">
                 <div className="wwd-icon-new">
@@ -202,25 +223,34 @@ const Services = () => {
                 </div> */}
               </div>
             </div>
-            
+
+
+
+
             <div className="wwd-card-new wwd-card-wide">
               <div className="wwd-card-content-row">
                 <div className="wwd-icon-new">
-                  <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="1.5" fill="none">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                    <path d="m9 12 2 2 4-4"></path>
+
+                  <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="m12 3-1.912 5.736A2 2 0 0 0 11 10v1a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-1a2 2 0 0 0-.088-1.264L12 3Z" />
+                    <path d="m11 11-4.73 9.46a1 1 0 0 0 .894 1.446L9 22" />
+                    <path d="m13 11 4.73 9.46a1 1 0 0 0-.894 1.446L15 22" />
+                    <path d="M9 17h6" />
                   </svg>
                 </div>
                 <div className="wwd-text-row">
-                  <h3>Renovation</h3>
-                  <p>Elegant designs and seamless renovations to elevate every space.</p>
+                  <h3>Planning & Designing</h3>
+                  <p>Smart planning and innovative designs that bring ideas to life.</p>
                 </div>
               </div>
-              <div className="wwd-card-image" style={{ backgroundImage: `url(${renovation_image})`, backgroundPosition: 'center 35%' }}>
+              <div className="wwd-card-image" style={{ backgroundImage: `url(${WwdPlanImage})`, backgroundPosition: 'center 35%' }}>
                 {/* <div className="wwd-card-arrow">
                 </div> */}
               </div>
             </div>
+
+
+
           </div>
         </div>
       </section>
@@ -230,15 +260,15 @@ const Services = () => {
         {/* Background Decorative Elements */}
         <div className="wwd-bg-orb orb-1"></div>
         <div className="wwd-bg-orb orb-2"></div>
-        
+
         <div className="container">
           <div className="why-choose-header">
             <h2>Why Choose SKYi</h2>
           </div>
-          
+
           <div className="timeline-container">
             <div className="timeline-line"></div>
-            
+
             <div className="timeline-item">
               <div className="timeline-connector"></div>
               <div className="timeline-content glass-panel-horizontal">
@@ -255,7 +285,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="timeline-item">
               <div className="timeline-connector"></div>
               <div className="timeline-content glass-panel-horizontal">
@@ -272,7 +302,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="timeline-item">
               <div className="timeline-connector"></div>
               <div className="timeline-content glass-panel-horizontal">
@@ -288,7 +318,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="timeline-item">
               <div className="timeline-connector"></div>
               <div className="timeline-content glass-panel-horizontal">
@@ -304,7 +334,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="timeline-item">
               <div className="timeline-connector"></div>
               <div className="timeline-content glass-panel-horizontal">
@@ -336,7 +366,7 @@ const Services = () => {
           <div className="testimonials-header">
             <h2>What Our Clients Say</h2>
           </div>
-          
+
           <TestimonialSlider />
         </div>
       </section>

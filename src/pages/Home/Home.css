@@ -9,7 +9,8 @@
   width: 100%;
   height: 75vh;
   position: relative;
-  background-image: url('../../assets/laptopView2.webp');
+  /* background-image: url('../../assets/laptopView2.webp'); */
+  background-image: url('../../assets/HomePage2.webp');
 
   /* background-image: url('../../assets/project5_5/5.png'); */
 
@@ -25,8 +26,9 @@
 
   /* background-position: center -99px; */
   background-size: cover;
-  background-position: center;
+  background-position: center top ;
   background-repeat: no-repeat;
+  
 }
 
 
@@ -276,12 +278,12 @@
   }
 }
 
-@media (max-width: 1012px) {
+/* @media (max-width: 1012px) {
   .hero-section {
     background-image: url('../../assets/laptopView.webp');
-    /* background-position: bottom 10%; */
+    background-position: bottom 10%;
 
-    /* background-image:
+    background-image:
       linear-gradient(to top,
         rgba(5, 5, 5, 0.95) 0%,
         rgba(5, 5, 5, 0.55) 40%,
@@ -289,18 +291,19 @@
       linear-gradient(to right,
         rgba(5, 5, 5, 0.60) 0%,
         transparent 60%),
-      url('../../assets/laptopView.webp'); */
+      url('../../assets/laptopView.webp');
 
   }
 
-}
+} */
 
 
-@media (max-width: 767px) {
+@media (max-width: 601px) {
   .hero-section {
     height: 65vh;
 
-    background-image: url('../../assets/mobileView.webp');
+    /* background-image: url('../../assets/mobileView.webp'); */
+
     /* background-image: url('../../assets/project1_1/1.jpg'); */
 
 
@@ -480,5 +483,35 @@
 
   .logo-text {
     font-size: 15px;
+  }
+}
+
+
+@media (max-width: 476px) {
+  .hero-section {
+    height: 65vh;
+
+    background-image: url('../../assets/mobileView.webp');
+
+    /* background-image: url('../../assets/project1_1/1.jpg'); */
+
+
+    /* background-image:
+      linear-gradient(to top,
+        rgba(5, 5, 5, 0.95) 0%,
+        rgba(5, 5, 5, 0.55) 40%,
+        transparent 70%),
+      linear-gradient(to right,
+        rgba(5, 5, 5, 0.60) 0%,
+        transparent 60%),
+      url('../../assets/mobileView.webp'); */
+
+
+    /* background-image: linear-gradient(to top, rgb(23 23 23 / 95%) 0%,
+        rgb(22 22 22 / 55%) 40%, transparent 70%), linear-gradient(to right,
+        rgb(22 21 21 / 60%) 0%,
+        transparent 60%), url('../../assets/mobileView.webp'); */
+
+
   }
 }

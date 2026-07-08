@@ -55,6 +55,7 @@ const SEO_NAMES = {
   '7': 'skyi-pinnacle-estates-ultra-luxury-villa-devanahalli-bangalore-1',
   '7A': 'skyi-pinnacle-estates-ultra-luxury-villa-devanahalli-bangalore-2',
   'PLAN7': 'skyi-pinnacle-estates-luxury-villa-near-airport-bangalore',
+  'renovationImage': 'renovation-image',
 };
 
 // ── Conversion function ──────────────────────────────────────────────────────
@@ -146,7 +147,7 @@ async function main() {
   // Process specific new root assets
   const rootAssets = [
     'layout_image.png',
-    'renovation_image.png',
+    'renovationImage.png',
   ];
 
   console.log(`\n📁 Root assets (${rootAssets.length} images)`);
