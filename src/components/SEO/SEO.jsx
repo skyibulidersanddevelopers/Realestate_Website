@@ -23,6 +23,17 @@ const SEO = ({
     ? `${BASE_URL}${canonical}`
     : `${BASE_URL}/`;
 
+  // Ensure ogImage is a fully qualified absolute URL
+  const fullOgImage = ogImage.startsWith('http')
+    ? ogImage
+    : `${BASE_URL}${ogImage.startsWith('/') ? '' : '/'}${ogImage}`;
+
+  // Check if we are showing the default company logo or a custom banner image
+  const isDefaultImage = ogImage === DEFAULT_OG_IMAGE || ogImage.includes('og-image.jpg');
+  const imageWidth = isDefaultImage ? '500' : '1200';
+  const imageHeight = isDefaultImage ? '500' : '630';
+  const twitterCard = isDefaultImage ? 'summary' : 'summary_large_image';
+
   return (
     <Helmet>
       {/* Primary */}
@@ -38,17 +49,17 @@ const SEO = ({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={fullCanonical} />
-      <meta property="og:image" content={ogImage} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
+      <meta property="og:image" content={fullOgImage} />
+      <meta property="og:image:width" content={imageWidth} />
+      <meta property="og:image:height" content={imageHeight} />
       <meta property="og:image:alt" content={fullTitle} />
       <meta property="og:locale" content="en_IN" />
 
       {/* Twitter Card */}
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content={twitterCard} />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={ogImage} />
+      <meta name="twitter:image" content={fullOgImage} />
       <meta name="twitter:image:alt" content={fullTitle} />
 
       {/* Page-specific JSON-LD */}
